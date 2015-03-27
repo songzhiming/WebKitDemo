@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController">
+            <connections>
+                <outlet property="homeProgressView" destination="Loo-Di-q0G" id="knp-UI-48b"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Loo-Di-q0G">
+                    <rect key="frame" x="0.0" y="-2" width="150" height="2"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="Ioe-Wg-6fM">
+                            <variation key="heightClass=regular-widthClass=compact" constant="2"/>
+                        </constraint>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Ioe-Wg-6fM"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="Ioe-Wg-6fM"/>
+                        </mask>
+                    </variation>
+                </progressView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Loo-Di-q0G" secondAttribute="trailing" constant="125" id="mQZ-vp-XI2">
+                    <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                </constraint>
+                <constraint firstItem="Loo-Di-q0G" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="125" id="yTF-uv-rmo">
+                    <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                </constraint>
+                <constraint firstItem="Loo-Di-q0G" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="399" id="yc1-VW-cjM">
+                    <variation key="heightClass=regular-widthClass=compact" constant="68"/>
+                </constraint>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="Loo-Di-q0G"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="mQZ-vp-XI2"/>
+                    <exclude reference="yTF-uv-rmo"/>
+                    <exclude reference="yc1-VW-cjM"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="Loo-Di-q0G"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="mQZ-vp-XI2"/>
+                    <include reference="yTF-uv-rmo"/>
+                    <include reference="yc1-VW-cjM"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>
